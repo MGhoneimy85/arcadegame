@@ -31,7 +31,6 @@ Enemy.prototype.update = function(dt) {
         // Collision 
         player.collision++ ;
         var collisionCount = player.collision; 
-        console.log('Collision : '+ collisionCount);
         document.getElementById('collisionval').innerHTML = collisionCount; 
         player.x = 200; // initial x position for player
         player.y = 400; // initial y position for player
@@ -70,10 +69,7 @@ Player.prototype.update = function() {
     if (this.y < 0) {
         player.win++ ;
         var winCount = player.win; 
-        console.log('win : '+ winCount);
         document.getElementById('winval').innerHTML = winCount; 
-        console.log('win');
-        this.win ++;
         this.x = 200;
         this.y = 400;
     }
@@ -98,8 +94,6 @@ Player.prototype.handleInput = function(keyPress) {
             this.y += 90;
             break;
     }
-
-    console.log(this.x +' '+this.y);
 };
 
 // Now instantiate your objects.
@@ -110,7 +104,7 @@ var player = new Player();
 var allEnemies = [];
 //fill allenemies array with enemy
 for (var i = 0; i < 3; i++) {
-    console.log(allEnemies);
+    
     var speed =   50 * Math.floor(Math.random() * 10 + 1);;
     allEnemies.push(new Enemy(-150, 60 + (85 * i), speed));
 }
