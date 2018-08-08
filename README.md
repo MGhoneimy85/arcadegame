@@ -21,8 +21,9 @@ after clone go to game folder open index.html on any browser
 
 ## play
 
-- make sure you are focising on the browser
+- make sure you are focusing on the browser
 - you can just start play using arrows { up , down , left , right }
+- try to avoid collision with bug and reach the top water to win
 - if collision happen avatar will go back to start point default and collision points will increased by 1 point
 - if you reach the water on the top you will go back to default position and win points will increase 1 point 
 - this game is unstopable 
