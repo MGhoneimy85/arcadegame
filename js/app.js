@@ -67,7 +67,7 @@ Player.prototype.update = function() {
     }
     // win
     if (this.y < 0) {
-        player.win++ ;
+        this.win++ ;
         var winCount = player.win; 
         document.getElementById('winval').innerHTML = winCount; 
         this.x = 200;
